@@ -1,0 +1,84 @@
+<html>
+  <head>
+    <title>HTML and CSS playground</title>
+  </head>
+  <style>
+    .box {
+      border: 1px solid #000;
+      margin: 5px;
+      /* width: 100px; */
+    }
+    .inline {
+      border: 1px solid #f00;
+    }
+    .floatcontainer {
+      overflow: auto;
+      width: 100%
+    }
+    .left {
+      width: 45%;
+      float: left;
+    }
+    .right {
+      width: 45%;
+      float: right;
+    }
+    .clear {
+      clear: both;
+      display: none;
+    }
+  </style>
+  <body>
+    <section>
+      <h1>block vs inline</h1> 
+      <div class="box">
+        block 1
+      </div>
+      <div class="box">
+        block 2
+      </div>
+      <div class="box">
+        block 3
+        <div class="box">
+          block 4
+        </div>
+      </div>
+
+      <hr/>
+
+      <p>
+        <span class="inline">inline 1</span>
+        <span class="inline">inline 2</span>
+      </p>
+
+      <hr/>
+
+      <div class="box">
+        block
+        <span class="inline">inline</span>
+      </div>
+    </section>
+    <section>
+      <h1>position</h1>
+      <div class="box" style="position: relative">
+        relative
+      </div>
+      <div class="box">
+        block 2
+      </div>
+    </section>
+    <section>
+      <h1>float</h1>
+      <div class="box">
+        container
+        <div class="box left">
+          left
+        </div>
+        <div class="box right">
+          right
+        </div>
+        <div class="clear"></div>
+      </div>
+    </section>
+  </body>
+</html>
