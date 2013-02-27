@@ -5,9 +5,20 @@
     <link rel="stylesheet" href="common.css" type="text/css" />
   </head>
   <style>
-    .floatcontainer {
+    .container {
       overflow: auto;
-      width: 100%
+    }
+    .easterEgg {
+      display: none;
+    }
+    .container .left {
+      display: none;
+    }
+    .container .easterEgg {
+      display: block;
+      float: left;
+      width: 100px;
+      height: 100px;
     }
     .left {
       width: 45%;
@@ -21,6 +32,7 @@
       clear: both;
     }
     header, section, aside, footer {
+      box-sizing: border-box;
       padding: 20px;
     }
     section {
@@ -46,6 +58,21 @@
     <footer class="bg clear">
       <code>&lt;header&gt;</code>
     </footer>
+
+    <section>
+      <h2>Prøv selv!</h2>
+      <div class="first">
+        Dette var da en rar container.
+        <div class="second bg left" style="width: 100px; height: 100px;">
+          Hvorfor fyller ikke foreldrenode ut høyden??
+        </div>
+        <div class="third easterEgg bg">
+          Sånn ja, mye bedre.
+        </div>
+      </div>
+      <p>Oppgave: Legg til klassen <code>container</code> på
+      innrammings-<code>div</code>.
+    </section>
 
     <p class="right"><a href="tasks.html">Gå videre →</a></p>
 
